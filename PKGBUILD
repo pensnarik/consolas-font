@@ -4,10 +4,11 @@ pkgrel=1
 pkgdesc="Consolas fonts"
 arch=(any)
 depends=(fontconfig xorg-font-utils)
-source=("http://someurl.org/$pkgname.tar.bz2")
+source=("https://github.com/pensnarik/$pkgname/raw/master/consolas-fonts-tts.tar.bz2")
 install=$pkgname.install
+md5sums=('605c08cc35295126c9ef4b8bdc1b34c4')
 
 package() {
-  install -Dm644 $pkgname/Consolas-Bold.ttf "$pkgdir"/usr/share/fonts/TTF/Consolas-Bold.ttf
-  install -Dm644 $pkgname/Consolas-Regular.ttf "$pkgdir"/usr/share/fonts/TTF/Consolas-Regular.ttf
+  install -dm 755 "${pkgdir}"/usr/share/fonts/TTF
+  install -Dm644 *.ttf "$pkgdir"/usr/share/fonts/TTF
 }
