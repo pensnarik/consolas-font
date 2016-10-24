@@ -1,3 +1,5 @@
+# Maintainer: Andrey Zhidenkov <pensnarik@gmail.com>
+
 pkgname=consolas-fonts
 pkgver=1.1
 pkgrel=1
