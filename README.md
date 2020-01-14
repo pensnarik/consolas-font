@@ -1,4 +1,4 @@
 # consolas-font
 Consolas Font Package for Arch Linux
 
-This font is using by official Telegram desktop client.
+This font is used by official Telegram desktop client.
